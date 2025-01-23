@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ca8d50e91.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="section">
+        <div class="row">
+            <div class="col">
+                <div class="first box">
+                    <input type="number" id="font-size" min="1" max="100" value="16" onchange="f1(this)">
+                </div>
+                <div class="second box">
+                    <button type="button" onclick="f2(this)" title="Bold">
+                        <i class="fa-solid fa-bold"></i>
+                    </button>
+                    <button type="button" onclick="f3(this)" title="Italic">
+                        <i class="fa-solid fa-italic"></i>
+                    </button>
+                    <button type="button" onclick="f4(this)" title="Underline">
+                        <i class="fa-solid fa-underline"></i>
+                    </button>
+                </div>
+                <div class="third box"> 
+                    <button type="button" onclick="f5(this)" title="Align Left"> 
+                        <div class="i fa-solid fa-align-left"></div> 
+                    </button>
+                    <button type="button" onclick="f6(this)" title="Align Center"> 
+                        <div class="i fa-solid fa-align-center"></div> 
+                    </button>
+                    <button type="button" onclick="f7(this)" title="Align Right"> 
+                        <div class="i fa-solid fa-align-right"></div> 
+                    </button>
+                </div>
+                <div class="fourth box"> 
+                    <button type="button" onclick="f8(this)" title="Text Transform">  
+                      aA  
+                    </button>
+                    <button type="button" onclick="f9(this)" title="Strikethrough">  
+                        <i class="fa-solid fa-text-slash"></i>
+                      </button>
+                      <button type="button" onclick="f10(this)" title="Text Color">  
+                        <input type="color" onchange="f10(this)"> 
+                      </button>
+                </div>
+            </div>
+            <br>
+        
+            <div class="col"> 
+<textarea id="textarea" placeholder="Your text here"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
